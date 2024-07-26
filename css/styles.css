@@ -275,7 +275,7 @@ header {
 .team-container {
   max-width: 1060px;
   margin: 0 auto;
-  margin-top: 100px;
+  margin-bottom: 100px;
 }
 
 .team-title {
@@ -304,36 +304,36 @@ header {
 .img-4,
 .img-5,
 .img-6 {
-    background-image: linear-gradient(0deg ,rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2)),url(../images/trainer1.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    max-width: 377px;
-    height: 330px;
-    border-radius: 16px;
-    display: flex;
-    flex-direction: column;
-    position: relative;
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../images/trainer1.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 377px;
+  height: 330px;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
 }
 
 .img-2 {
-    background-image: linear-gradient(0deg ,rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2)),url(../images/trainer2.png);
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../images/trainer2.png);
 }
 
 .img-3 {
-    background-image: linear-gradient(0deg ,rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2)),url(../images/trainer3.png);
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../images/trainer3.png);
 }
 
 .img-4 {
-    background-image: linear-gradient(0deg ,rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2)),url(../images/trainer4.png);
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../images/trainer4.png);
 }
 
 .img-5 {
-    background-image: linear-gradient(0deg ,rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2)),url(../images/trainer5.png);
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../images/trainer5.png);
 }
 
 .img-6 {
-    background-image: linear-gradient(0deg ,rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2)),url(../images/trainer6.png);
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../images/trainer6.png);
 }
 
 .team-img-title {
@@ -351,8 +351,36 @@ header {
 }
 
 /* footer */
-
-
+.footer-content {
+  max-width: 1060px;
+  margin: 0 auto;
+  display: grid;
+  gap: 102px;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 66px;
+}
+.footer-text-div-one{
+  width: 443px;
+}
+.footer-title {
+  font-size: 2rem;
+  
+}
+#fitness{
+  font-size: 70px;
+  font-weight: bolder;
+}
+.footer-description-one{
+  margin-top: 20px;
+  line-height: 30px;
+  letter-spacing: 1px;
+}
+.footer-description {
+  margin-top: 39px;
+  font-size: 23px;
+  font-weight: 400;
+  line-height: 40px;
+}
 /* responsive for mobile */
 @media screen and (max-width: 576px) {
   .nav-links {
@@ -428,11 +456,19 @@ header {
   /* team -img-section */
   .team-img-container {
     grid-template-columns: repeat(1, 1fr);
-    /* max-width: 300px; */
+    max-width: 500px;
     margin: 0 15px;
-    justify-content: center;
   }
-  .img-0,.img-4{
+  .img-0,
+  .img-4 {
     display: none;
+  }
+  /* footer */
+  .footer-content{
+    grid-template-columns: repeat(1,1fr);
+    padding: 20px;
+  }
+  .footer-text-div-one{
+width: auto;
   }
 }
