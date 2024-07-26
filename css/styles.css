@@ -243,7 +243,7 @@ header {
   background-color: #222222;
   border-radius: 18px;
   padding: 30px 20px;
-
+  margin-bottom: 100px;
 }
 
 .run-text {
@@ -357,7 +357,8 @@ header {
   display: grid;
   gap: 102px;
   grid-template-columns: repeat(3, 1fr);
-  padding: 66px;
+  padding: 66px ;
+  border-bottom: 2px solid  rgba(255, 255, 255, 0.1);
 }
 .footer-text-div-one{
   width: 443px;
@@ -380,6 +381,10 @@ header {
   font-size: 23px;
   font-weight: 400;
   line-height: 40px;
+}
+.last-description{
+  text-align: center;
+  padding: 30px 0 ;
 }
 /* responsive for mobile */
 @media screen and (max-width: 576px) {
@@ -470,5 +475,8 @@ header {
   }
   .footer-text-div-one{
 width: auto;
+  }
+  #fitness{
+    font-size: 3rem;
   }
 }
