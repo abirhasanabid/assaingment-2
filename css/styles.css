@@ -310,15 +310,13 @@ caption {
 tr,
 td {
   border: 2px solid rgba(255, 255, 255, 0.1);
-
-  padding: 13px 40px 13px 24px;
   color: rgba(255, 255, 255, 0.5);
   font-size: 0.87rem;
 }
 
-/* td {
-  padding: 13px 70px 13px 18px;
-} */
+td {
+  padding: 14px 20px;
+}
 
 thead>tr>td {
   color: white;
@@ -546,6 +544,14 @@ form {
 
   .primary-title {
     font-size: 2rem;
+  }
+  /* table  */
+  .table-content{
+    flex-direction: column;
+    gap: 0;
+  }
+  .bmi-form{
+    padding: 13px 20px 13px 20px;
   }
 
   /* team -img-section */
