@@ -272,29 +272,32 @@ header {
 }
 
 /* Bmi section style */
-.table-text{
+.table-text {
   max-width: 671px;
   margin: 0 auto;
 }
-.table-title ,.select-title{
+
+.table-title,
+.select-title {
   margin-bottom: 15px;
 }
-.table-container{
+
+.table-container {
   margin-top: 88px;
-  
+  padding: 52px 0;
+
 }
-.table-content{
+
+.table-content {
   max-width: 1060px;
   margin: 0 auto;
   gap: 170px;
 }
-.table-div{
-  max-width: 443px;
-}
+
 table {
   border-collapse: collapse;
   border: 1px solid rgba(255, 255, 255, 0.1);
-  
+
 }
 
 caption {
@@ -307,21 +310,48 @@ caption {
 tr,
 td {
   border: 2px solid rgba(255, 255, 255, 0.1);
-  padding:  13px 40px ;
+
+  padding: 13px 40px 13px 24px;
   color: rgba(255, 255, 255, 0.5);
   font-size: 0.87rem;
 }
 
+/* td {
+  padding: 13px 70px 13px 18px;
+} */
+
 thead>tr>td {
   color: white;
 }
-.select-div{
+
+.select-div {
   max-width: 577px;
 }
-.select-title{
+
+.select-title {
   color: #ffff;
   font-size: 1.75rem;
   font-weight: 800;
+  margin: 52px 0;
+}
+
+form {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin: 34px 0;
+}
+
+.second-select {
+  grid-column: span 2;
+}
+
+.bmi-form {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.1);
+  padding: 13px 75px 13px 20px;
+  border: none;
+  border-radius: 8px;
 }
 
 /* team section setyle */
