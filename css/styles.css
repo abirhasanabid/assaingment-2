@@ -3,6 +3,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 .inter-font {
@@ -351,20 +352,18 @@ thead>tr>td {
 
 input,
 select {
-  width: auto;
-  height: 40px;
   color: rgba(255, 255, 255, 0.1);
   background-color: rgba(255, 255, 255, 0.1);
   border: none;
   border-radius: 8px;
-  padding: 10px 5px;
+  padding: 20px;
 }
 
 select {
   color: rgba(255, 255, 255, 0.3);
-  height: 59px;
 }
-#value{
+
+#value {
   padding: 50px;
 }
 
@@ -437,13 +436,7 @@ select {
   font-size: 1.25rem;
   font-weight: 900;
   position: absolute;
-  bottom: 50px;
-  left: 20px;
-}
-
-.team-img-description {
-  position: absolute;
-  bottom: 30px;
+  bottom: 60px;
   left: 20px;
 }
 
@@ -454,8 +447,10 @@ select {
   display: grid;
   gap: 102px;
   grid-template-columns: repeat(3, 1fr);
-  padding: 66px;
+  padding: 66px 0;
   border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+  justify-items: center;
+  align-items: center;
 }
 
 .footer-text-div-one {
@@ -480,7 +475,7 @@ select {
 
 .footer-description {
   margin-top: 39px;
-  font-size: 23px;
+  font-size: 1.25rem;
   font-weight: 400;
   line-height: 40px;
 }
@@ -588,15 +583,13 @@ select {
   }
 
   input,
-select{
-  width: 100%;
-  height: 50%;
-  
-}
-select{
-  height: 100%;
-}
-  .select-title{
+  select {
+    width: 100%;
+    height: 50%;
+
+  }
+
+  .select-title {
     margin: 10px 0;
   }
 
@@ -605,6 +598,11 @@ select{
     grid-template-columns: repeat(1, 1fr);
     max-width: 500px;
     margin: 0 15px;
+  }
+
+  .team-img-title {
+    font-size: 1rem;
+    font-weight: 700;
   }
 
   .img-0,
@@ -625,5 +623,9 @@ select{
 
   #fitness {
     font-size: 3rem;
+  }
+
+  .footer-description {
+    font-size: 1rem;
   }
 }
