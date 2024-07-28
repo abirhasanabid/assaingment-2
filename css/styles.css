@@ -294,6 +294,10 @@ header {
   gap: 170px;
 }
 
+.table-div {
+  max-width: 443px;
+}
+
 table {
   border-collapse: collapse;
   border: 1px solid rgba(255, 255, 255, 0.1);
@@ -315,7 +319,7 @@ td {
 }
 
 td {
-  padding: 14px 20px;
+  padding: 20px 20px;
 }
 
 thead>tr>td {
@@ -333,23 +337,35 @@ thead>tr>td {
   margin: 52px 0;
 }
 
-form {
+.grid-form {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 12px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  max-width: 577px;
   margin: 34px 0;
 }
 
-.second-select {
+.input5 {
   grid-column: span 2;
 }
 
-.bmi-form {
-  background-color: rgba(255, 255, 255, 0.1);
+input,
+select {
+  width: auto;
+  height: 40px;
   color: rgba(255, 255, 255, 0.1);
-  padding: 13px 75px 13px 20px;
+  background-color: rgba(255, 255, 255, 0.1);
   border: none;
   border-radius: 8px;
+  padding: 10px 5px;
+}
+
+select {
+  color: rgba(255, 255, 255, 0.3);
+  height: 59px;
+}
+#value{
+  padding: 50px;
 }
 
 /* team section setyle */
@@ -546,30 +562,42 @@ form {
   .primary-title {
     font-size: 2rem;
   }
+
   /* table  */
-  .table-text{
+  .table-text {
     margin: 0 20px;
   }
-  .table-div,.select-div{
+
+  .table-div,
+  .select-div {
     padding: 20px;
   }
-  .table-container{
+
+  .table-container {
     margin-top: 20px;
     padding: 0;
   }
-  .table-content{
+
+  .table-content {
     flex-direction: column;
     gap: 0;
   }
-  caption{
+
+  caption {
     padding: 20px 0;
   }
-  .bmi-form{
-    padding: 13px 20px 13px 20px;
-  }
-  form{
-    display: flex;
-    flex-direction: column;
+
+  input,
+select{
+  width: 100%;
+  height: 50%;
+  
+}
+select{
+  height: 100%;
+}
+  .select-title{
+    margin: 10px 0;
   }
 
   /* team -img-section */
