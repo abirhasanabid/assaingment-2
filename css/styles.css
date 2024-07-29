@@ -272,6 +272,92 @@ header {
   width: 100%;
 }
 
+/* priching section style */
+.priching-container {
+  max-width: 1060px;
+  margin: 0 auto;
+}
+
+.priching-title {
+  max-width: 400px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  letter-spacing: 5px;
+  font-size: 4rem;
+  text-align: center;
+  color: rgba(255, 0, 0, 0.678);
+  /* color: transparent; */
+  /* border: none; */
+  text-transform: uppercase;
+  /* -webkit-text-stroke: 1px rgb(165, 165, 165); */
+  animation: growShrink 2s infinite;
+}
+
+@keyframes growShrink {
+
+  0%,
+  100% {
+    transform: scaleY(1);
+  }
+
+  50% {
+    transform: scaleY(1.3);
+  }
+}
+
+.priching-cards {
+  margin-bottom: 100px;
+  gap: 20px;
+  justify-content: center;
+}
+
+.priching-card {
+  padding: 20px;
+  width: 100%;
+  border: 1px solid gray;
+}
+
+.priching-card-img {
+  background-color: #cc3119;
+  border-radius: 50%;
+  margin: 30px 0;
+  padding: 15px;
+}
+
+.priching-card-title,
+.priching-card-description {
+  color: #ffff;
+  padding: 10px 0;
+}
+
+.priching-card-span {
+  color: #ec290bfb;
+}
+.check-icon{
+  padding-right: 10px;
+}
+.priching-btn{
+text-align: center;
+margin-top: 20px ;
+/* width: 100%; */
+}
+.priching-btn-style
+{
+  width: 100%;
+  border: 2px solid #ffffff67;
+  padding: 10px ;
+  letter-spacing: 1px;
+  color: white;
+  background-color: transparent;
+  cursor: pointer;
+  transition: all .2s ease;
+ 
+}
+.priching-btn-style:hover{
+ background-color: red;
+ border: 2px solid transparent;
+}
+
 /* Bmi section style */
 .table-text {
   max-width: 671px;
@@ -386,6 +472,7 @@ select {
 }
 
 .team-img-container {
+  width: auto;
   background-color: #222222;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -404,7 +491,7 @@ select {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  max-width: 377px;
+  width: 100%;
   height: 330px;
   border-radius: 16px;
   display: flex;
@@ -440,6 +527,12 @@ select {
   left: 20px;
 }
 
+.team-img-description {
+  position: absolute;
+  bottom: 30px;
+  left: 20px;
+}
+
 /* footer */
 .footer-content {
   max-width: 1060px;
@@ -449,7 +542,7 @@ select {
   grid-template-columns: repeat(3, 1fr);
   padding: 66px 0;
   border-bottom: 2px solid rgba(255, 255, 255, 0.1);
-  justify-items: center;
+  /* justify-items: center; */
   align-items: center;
 }
 
@@ -557,7 +650,14 @@ select {
   .primary-title {
     font-size: 2rem;
   }
-
+/* priching section style */
+.priching-cards{
+  flex-direction: column;
+  margin: 0 15px;
+}
+.priching-title{
+  margin-bottom: 20px;
+}
   /* table  */
   .table-text {
     margin: 0 20px;
@@ -566,6 +666,7 @@ select {
   .table-div,
   .select-div {
     padding: 20px;
+    width: 100%;
   }
 
   .table-container {
@@ -580,6 +681,7 @@ select {
 
   caption {
     padding: 20px 0;
+    width: auto;
   }
 
   input,
@@ -596,13 +698,13 @@ select {
   /* team -img-section */
   .team-img-container {
     grid-template-columns: repeat(1, 1fr);
-    max-width: 500px;
+    /* max-width: 500px; */
     margin: 0 15px;
   }
 
   .team-img-title {
-    font-size: 1rem;
-    font-weight: 700;
+    font-size: 1.25rem;
+    font-weight: 800;
   }
 
   .img-0,
@@ -615,6 +717,7 @@ select {
     grid-template-columns: repeat(1, 1fr);
     padding: 20px;
     gap: 20px;
+    justify-content: 0;
   }
 
   .footer-text-div-one {
